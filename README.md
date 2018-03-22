@@ -11,5 +11,4 @@ Documentation: http://www.alexwidener.com/MotionBuilderHotkeyEditor/
   - After executing the hotkey editor script, which opens a window, go to *File->Reset Hotkeys* and choose the one that you typically use for interaction.
   - In the **right pane** set the full path to the *TrajectoriesToggle.py* and *DisableAllTrajectories.py* files, e.g. for entries Script6 and Script7.
   - Then in the **left pane** scroll down until you find the *action.global.script* entries. Assign shortcut commands to the according script entries (e.g. 6 & 7)
-
-You have to restart MotionBuilder after saving the changes.
+  - You have to **restart MotionBuilder** after *saving the changes*.
