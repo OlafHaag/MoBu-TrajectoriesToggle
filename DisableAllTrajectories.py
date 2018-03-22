@@ -21,28 +21,23 @@
 #    SOFTWARE.
 
 # What it does:
-# It toggles the visibility of trajectories on selected objects.
+# It disables the show trajectories flag on all scene components.
 #    
 # USAGE:
 # - Activate the Trajectories button in the top of the viewer window.
 # - Click the small arrow to its right and disable 'Auto Selection'
 # - This script works best with a keyboard shortcut assigned to it.
-#   > It's easiest to do that with Alex Widener's hotkey editor (forked and modified):
-#   > https://github.com/OlafHaag/MotionBuilderHotkeyEditor
-#   > Documentation: http://www.alexwidener.com/MotionBuilderHotkeyEditor/
 
 from pyfbsdk import *
 
 
-def toggle_trajectories_on_selected():
-    objects = FBModelList()
-    FBGetSelectedModels(objects)
-    for obj in objects:
-        try:
-            obj.PropertyList.Find('ShowTrajectories').Data = not obj.PropertyList.Find('ShowTrajectories').Data
-        except AttributeError:
-            continue
-    
+def disable_all_trajectories():
+    for comp in FBSystem().Scene.Components:
+            try:
+                comp.PropertyList.Find('ShowTrajectories').Data = False
+            except AttributeError:
+                continue
+                
+                
 if __name__ in ('__main__', '__builtin__'):
-    toggle_trajectories_on_selected()
-
+    disable_all_trajectories()
