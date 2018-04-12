@@ -2,13 +2,9 @@
 MotionBuilder Python scripts that deal with trajectories. One to toggles the visibility of trajectories on selected objects, another to diable the trajectories on all scence components
 
 ## USAGE:
-- Activate the Trajectories button in the top of the viewer window.
-- Click the small arrow to its right and disable 'Auto Selection'
+- Activate the *Trajectories* button in the top of the viewer window.
+- Click the small arrow to its right and disable *'Auto Selection'*
 - These scripts work best with a keyboard shortcut assigned to each.
-It's easiest to do that with Alex Widener's hotkey editor (forked and modified):
-https://github.com/OlafHaag/MotionBuilderHotkeyEditor
-Documentation: http://www.alexwidener.com/MotionBuilderHotkeyEditor/
-  - After executing the hotkey editor script, which opens a window, go to *File->Reset Hotkeys* and choose the one that you typically use for interaction.
-  - In the **right pane** set the full path to the *TrajectoriesToggle.py* and *DisableAllTrajectories.py* files, e.g. for entries Script6 and Script7.
-  - Then in the **left pane** scroll down until you find the *action.global.script* entries. Assign shortcut commands to the according script entries (e.g. 6 & 7)
-  - You have to **restart MotionBuilder** after *saving the changes*.
+It's easiest to do that with the scripts that come with MotionBuilder:
+ - In the *Asset Browser* navigate to *Scripts->ComplexTools* and there you'll find the **ActionScriptMgr.py** with which you can assign the scripts found in this repository to some kind of script-slots.
+ - You'll also find the **KeyboardMapper.py** tool in which you can first select your configuration (3DS Max, Maya, etc.) and then scroll down to the script entries called *action.global.script1* and so on to assign a keyboard shortcut to the slots you chose before for the scripts.
