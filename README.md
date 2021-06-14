@@ -1,5 +1,5 @@
 # MotionBuilder: Toggle Trajectories
-MotionBuilder Python scripts that deal with trajectories. One to toggles the visibility of trajectories on selected objects, another to diable the trajectories on all scence components
+MotionBuilder Python scripts that deal with trajectories. One to toggle the visibility of trajectories on selected objects, another to disable the trajectories on all scence components.
 
 ## USAGE:
 - Activate the *Trajectories* button in the top of the viewer window.
